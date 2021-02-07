@@ -1,0 +1,22 @@
+.darkmode {
+  background-color: $reactBgColor;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $whiteText;
+}
+.lightmode {
+  @extend .darkmode;
+  background-color: $whiteTheme;
+  color: $reactBgColor;
+}
+
+.fa-moon {
+  color: $moonColor;
+}
+.fa-sun {
+  color: $sunColor !important;
+}
